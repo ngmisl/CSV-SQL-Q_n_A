@@ -1,23 +1,23 @@
-import pandas as pd
-import sqlite3
-import streamlit as st
 import base64
-from sqlalchemy import (
-    create_engine,
-    MetaData,
-    Table,
-    Column,
-    String,
-    Integer,
-    Float,
-    DateTime,
-)
-from langchain.agents import create_sql_agent
-from langchain.agents.agent_toolkits import SQLDatabaseToolkit
-from langchain.sql_database import SQLDatabase
-from langchain.llms import OpenAI
-from langchain.agents import AgentExecutor
 import os
+import sqlite3
+
+import pandas as pd
+import streamlit as st
+from langchain.agents import AgentExecutor, create_sql_agent
+from langchain.agents.agent_toolkits import SQLDatabaseToolkit
+from langchain.llms import OpenAI
+from langchain.sql_database import SQLDatabase
+from sqlalchemy import (
+    Column,
+    DateTime,
+    Float,
+    Integer,
+    MetaData,
+    String,
+    Table,
+    create_engine,
+)
 from streamlit_chat import message
 
 

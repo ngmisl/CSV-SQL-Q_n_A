@@ -1,0 +1,7 @@
+openai
+streamlit_chat
+tabulate
+streamlit
+langchain
+pandas
+sqlalchemy
