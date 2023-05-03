@@ -51,8 +51,6 @@ def get_binary_file_downloader_html(bin_file, file_label="File"):
 st.set_page_config(
     page_title="CSV to SQLite",
     page_icon="🔗",
-    layout="wide",
-    initial_sidebar_state="collapsed",
 )
 
 st.title("CSV to SQLite Converter")
